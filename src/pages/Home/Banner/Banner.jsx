@@ -5,7 +5,7 @@ import img4 from "../../../assets/images/banner/4.jpg";
 
 const Banner = () => {
   return (
-    <div className="carousel w-full h-[600px] shadow-2xl">
+    <div className="carousel w-full h-[600px] shadow-2xl rounded">
       <div id="slide1" className="carousel-item relative w-full">
         <img src={img1} className="w-full rounded-xl" />
         <div className="absolute rounded-xl flex items-center h-full left-0 top-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
@@ -18,8 +18,8 @@ const Banner = () => {
               majority have suffered alteration in some form
             </p>
             <div>
-              <button className="btn btn-primary mr-5">Discover More</button>
-              <button className="btn btn-outline btn-secondary">
+              <button className="btn bg-orange-500 mr-5">Discover More</button>
+              <button className="btn btn-outline text-white">
                 Latest Project
               </button>
             </div>
@@ -46,8 +46,8 @@ const Banner = () => {
               majority have suffered alteration in some form
             </p>
             <div>
-              <button className="btn btn-primary mr-5">Discover More</button>
-              <button className="btn btn-outline btn-secondary">
+              <button className="btn bg-orange-500 mr-5">Discover More</button>
+              <button className="btn btn-outline text-white">
                 Latest Project
               </button>
             </div>
@@ -74,8 +74,8 @@ const Banner = () => {
               majority have suffered alteration in some form
             </p>
             <div>
-              <button className="btn btn-primary mr-5">Discover More</button>
-              <button className="btn btn-outline btn-secondary">
+              <button className="btn bg-orange-500 mr-5">Discover More</button>
+              <button className="btn btn-outline text-white">
                 Latest Project
               </button>
             </div>
@@ -102,8 +102,8 @@ const Banner = () => {
               majority have suffered alteration in some form
             </p>
             <div>
-              <button className="btn btn-primary mr-5">Discover More</button>
-              <button className="btn btn-outline btn-secondary">
+              <button className="btn bg-orange-500 mr-5">Discover More</button>
+              <button className="btn btn-outline text-white">
                 Latest Project
               </button>
             </div>
