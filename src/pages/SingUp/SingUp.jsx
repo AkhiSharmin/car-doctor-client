@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import login from "../../../src/assets/images/login/login.svg";
 
-const Login = () => {
-  const handelLogin = (event) => {
+const SingUp = () => {
+  const handelSingUp = (event) => {
     event.preventDefault();
   };
 
@@ -14,22 +14,33 @@ const Login = () => {
         </div>
         <div className="card w-full flex-shrink-0 max-w-sm shadow-2xl bg-base-100">
           <div className="card-body">
-            <h1 className="text-3xl text-center font-bold">Login now!</h1>
-            <form onSubmit={handelLogin}>
+            <h1 className="text-3xl text-center font-bold">SingUp!</h1>
+            <form onSubmit={handelSingUp}>
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text">Name</span>
+                </label>
+                <input
+                  type="text"
+                  placeholder="Enter your Name"
+                  name="Name"
+                  className="input input-bordered"
+                />
+              </div>
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Email</span>
                 </label>
                 <input
                   type="text"
-                  placeholder="email"
+                  placeholder="Enter your Email"
                   name="email"
                   className="input input-bordered"
                 />
               </div>
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text">Password</span>
+                  <span className="label-text">Confirm Password</span>
                 </label>
                 <input
                   type="password"
@@ -47,14 +58,14 @@ const Login = () => {
                 <input
                   className="btn bg-orange-500 border-0"
                   type="submit"
-                  value="Login"
+                  value="SingUp"
                 />
               </div>
             </form>
             <p className="my-4 text-center">
-              New to Car Doctors?
-              <Link className="text-orange-500 font-bold" to="/singup">
-                Sing Up
+              Already have an Account?
+              <Link className="text-orange-500 font-bold" to="/login">
+                LogIn
               </Link>
             </p>
           </div>
@@ -64,4 +75,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default SingUp;
