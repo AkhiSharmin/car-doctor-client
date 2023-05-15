@@ -1,9 +1,27 @@
 import { Link } from "react-router-dom";
 import login from "../../../src/assets/images/login/login.svg";
+import { useContext } from "react";
+import { AuthContext } from "../../Provider/AuthProviders";
 
 const SingUp = () => {
+  const { createUser } = useContext(AuthContext);
+
   const handelSingUp = (event) => {
     event.preventDefault();
+    const form = event.target;
+    const name = form.name.value;
+    const email = form.email.value;
+    const password = form.password.value;
+    console.log(name, email, password);
+
+    createUser(email, password)
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+      })
+      .catch((error) => {
+        console.log(error.message);
+      });
   };
 
   return (
