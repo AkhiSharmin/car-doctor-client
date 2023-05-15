@@ -1,6 +1,4 @@
-// eslint-disable-next-line react/prop-types
 const ServicesCard = ({ service }) => {
-  // eslint-disable-next-line react/prop-types
   const { img, price, title } = service;
   return (
     <div className="card w-96 bg-base-100 shadow-xl">
